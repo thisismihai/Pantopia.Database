@@ -18,7 +18,7 @@ func RandomInt(min, max int64) int64 {
 	return min + rand.Int63n(max-min+1)
 }
 
-//RandomString generates a random string of length n
+// RandomString generates a random string of length n
 func RandomString(n int) string {
 	var sb strings.Builder
 	k := len(alphabet)
@@ -30,6 +30,9 @@ func RandomString(n int) string {
 
 	return sb.String()
 }
+
+// this is a random comment
+
 func RandomOwner() string {
 	return RandomString(6)
 }
