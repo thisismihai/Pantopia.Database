@@ -32,7 +32,7 @@ func RandomString(n int) string {
 }
 
 // this is a random comment
-
+// another random comment
 func RandomOwner() string {
 	return RandomString(6)
 }
