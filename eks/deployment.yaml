@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pantopia-api-deployment
+  labels:
+    app: pantopia-api
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: pantopia-api
+  template:
+    metadata:
+      labels:
+        app: pantopia-api
+    spec:
+      containers:
+      - name: pantopia
+        image: 179169341308.dkr.ecr.eu-west-2.amazonaws.com/pantopia:71fedcf74d92e477c843822034ec74186d59330a
+        ports:
+        - containerPort: 8080
