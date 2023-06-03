@@ -17,5 +17,6 @@ spec:
       containers:
       - name: pantopia
         image: 179169341308.dkr.ecr.eu-west-2.amazonaws.com/pantopia:71fedcf74d92e477c843822034ec74186d59330a
+        imagePullPolicy: Always
         ports:
         - containerPort: 8080
