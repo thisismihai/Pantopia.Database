@@ -25,6 +25,7 @@ type Querier interface {
 	ListLeads(ctx context.Context, arg ListLeadsParams) ([]Lead, error)
 	UpdateAccount(ctx context.Context, arg UpdateAccountParams) (Account, error)
 	UpdateLead(ctx context.Context, arg UpdateLeadParams) (Lead, error)
+	UpdateUser(ctx context.Context, arg UpdateUserParams) (User, error)
 }
 
 var _ Querier = (*Queries)(nil)
